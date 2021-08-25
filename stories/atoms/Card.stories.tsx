@@ -36,7 +36,7 @@ const cardProps = Array.from(new Array(4), (_, i) => ({
 const MultipleTemplate: Story<CardProps> = () => (
   <SimpleGrid
     columns={{ base: 1, md: 2, lg: 2 }}
-    gap={5}
+    gap="4rem"
     my="2rem"
     ml={{ lg: '3rem' }}
   >

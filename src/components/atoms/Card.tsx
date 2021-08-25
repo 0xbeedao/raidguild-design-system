@@ -23,18 +23,17 @@ export const Card: React.FC<CardProps> = ({ title, imageSrc, text, imageAlt }) =
       variant='labels'
       fontSize={{ base: '16px' }}
       textAlign='center'
-      mb={3}
+      mb={4}
     >
       {title}
     </Heading>
 
-    <Image src={imageSrc} alt={imageAlt || imageSrc} my='.5rem' />
+    <Image src={imageSrc} alt={imageAlt || imageSrc} my='1.5rem' />
 
     <ChakraText
       variant="textTwo"
       fontSize={{ base: '16px' }}
       textAlign='left'
-
     >
       {text}
     </ChakraText>

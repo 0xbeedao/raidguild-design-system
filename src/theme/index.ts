@@ -2,6 +2,7 @@ import { extendTheme, Theme } from '@chakra-ui/react';
 import { colors } from './colors';
 import { Button } from './components/Button';
 import { Text } from './components/Text';
+import { Heading } from './components/Heading';
 import { textStyles } from './texts';
 import './globals.css';
 
@@ -28,5 +29,6 @@ export const theme: Theme = extendTheme({
   components: {
     Button,
     Text,
+    Heading,
   },
 });
