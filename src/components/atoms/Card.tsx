@@ -34,6 +34,7 @@ export const Card: React.FC<CardProps> = ({ title, imageSrc, text, imageAlt }) =
       variant="textTwo"
       fontSize={{ base: '16px' }}
       textAlign='left'
+
     >
       {text}
     </ChakraText>
