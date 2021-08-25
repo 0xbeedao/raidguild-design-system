@@ -3,12 +3,12 @@ import { Flex, Heading, ChakraText, Image } from '../..';
 
 export interface CardProps {
   title: string;
-  imageSrc: string;
-  imageAlt?: string;
+  imgSrc: string;
+  imgAlt?: string;
   text: string;
 }
 
-export const Card: React.FC<CardProps> = ({ title, imageSrc, text, imageAlt }) => (
+export const Card: React.FC<CardProps> = ({ title, imgSrc, text, imgAlt }) => (
   <Flex
     direction='column'
     alignItems='center'
@@ -28,7 +28,7 @@ export const Card: React.FC<CardProps> = ({ title, imageSrc, text, imageAlt }) =
       {title}
     </Heading>
 
-    <Image src={imageSrc} alt={imageAlt || imageSrc} my='1.5rem' />
+    <Image src={imgSrc} alt={imgAlt || imgSrc} my='1.5rem' />
 
     <ChakraText
       variant="textTwo"

@@ -1,6 +1,10 @@
 import { Meta, Story } from '@storybook/react';
 import React from 'react';
 import { Card, CardProps, SimpleGrid } from '../../src';
+import imgConsultations from '../../src/assets/consultations.png';
+import imgDesignSprints from '../../src/assets/designsprints.png';
+import imgFullStack from '../../src/assets/fullstackdev.png';
+import imgMarketing from '../../src/assets/marketing.png';
 
 export default {
   title: 'Components/Atoms/Card',
@@ -16,21 +20,20 @@ export const Single = Template.bind({});
 Single.args = {
   title: 'Card Title',
   text: lorem,
-  imageSrc:
-    'https://res.cloudinary.com/saimano/image/upload/v1622036153/RaidGuild/icons/red/consultations_lr6ef4.png',
+  imgSrc: imgConsultations,
 };
 
 const images = [
-  'https://res.cloudinary.com/saimano/image/upload/v1622036153/RaidGuild/icons/red/consultations_lr6ef4.png',
-  'https://res.cloudinary.com/saimano/image/upload/v1622036154/RaidGuild/icons/red/designsprints__one_zuzzjt.png',
-  'https://res.cloudinary.com/saimano/image/upload/v1622036154/RaidGuild/icons/red/fullstackdev_pvshh4.png',
-  'https://res.cloudinary.com/saimano/image/upload/v1622036155/RaidGuild/icons/red/marketing_ge6ikg.png',
+  imgConsultations,
+  imgDesignSprints,
+  imgFullStack,
+  imgMarketing,
 ];
 
 const cardProps = Array.from(new Array(4), (_, i) => ({
   title: `Card ${i}`,
   text: lorem,
-  imageSrc: images[i],
+  imgSrc: images[i],
 }));
 
 const MultipleTemplate: Story<CardProps> = () => (
