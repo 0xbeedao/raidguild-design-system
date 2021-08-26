@@ -14,14 +14,14 @@ const Template: Story = () => (
     <Image src={raidGuildLogoLeft} alt='Swords logo' maxH='75vh' />
     <VStack align="center" spacing="5vh">
         <Heading
-          variant="texturina"
+          variant="headingOne"
           textTransform="uppercase"
           fontSize={{ base: '18px' }}
           textAlign="center"
         >
             Raid Guild Design Guide
         </Heading>
-        <ChakraText align="center" mb={5}>
+        <ChakraText align="center" mb={5} fontFamily="texturina">
             Use the navigation on the left to explore existing components
             built with Raid Guild styling.
         </ChakraText>
