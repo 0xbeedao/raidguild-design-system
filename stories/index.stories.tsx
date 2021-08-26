@@ -1,9 +1,9 @@
 import { Meta, Story } from '@storybook/react';
 import React from 'react';
 import { Heading, VStack, ChakraText, HStack, Image, Tooltip } from '../src';
-import raidGuildLogoLeft from '../src/assets/raid--left.png';
-import raidGuildLogoRight from '../src/assets/raid--right.png';
-import season2 from '../src/assets/Season2-DAO-02b.png';
+import raidGuildLogoLeft from '../src/assets/images/raid--left.png';
+import raidGuildLogoRight from '../src/assets/images/raid--right.png';
+import season2 from '../src/assets/images/Season2-DAO-02b.png';
 
 export default {
   title: 'Raid Guild Design System',
