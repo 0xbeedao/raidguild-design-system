@@ -1,5 +1,5 @@
+import { Flex } from '@chakra-ui/layout';
 import React from 'react';
-import { Center } from '../chakra';
 
 export interface SidePanelProps {
   /**
@@ -12,9 +12,5 @@ export interface SidePanelProps {
  * Primary UI component for user interaction
  */
 export const SidePanel: React.FC<SidePanelProps> = ({ children }) => {
-  return (
-    <Center top="50%" pointerEvents="none" z-index="0">
-      {children}
-    </Center>
-  );
+  return <Flex>{children}</Flex>;
 };
